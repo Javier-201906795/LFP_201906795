@@ -9,8 +9,8 @@ from cargaarchivo import *
 
 
 #Pantalla Inicial
-print(pantallapricipal())
-input()
+# print(pantallapricipal())
+# input()
 
 #Menu Principal
 print(menuprincipal())
@@ -23,10 +23,10 @@ while opcion != 5:
     if (opcion == 1):
         print(m1_cargadearchivios())
         #Carga de archivo
-
+        cargarArchivo()
         #test1
-        testpeli()
-        
+        #testpeli()
+
     elif (opcion == 2):
         print("dos")
     elif (opcion == 3):

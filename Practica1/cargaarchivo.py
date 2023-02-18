@@ -1,3 +1,6 @@
+
+ruta = None
+
 class Pelicula:
     def __init__(self, nombre, actores, anio, genero):
         self.nombre = nombre
@@ -12,6 +15,13 @@ class Pelicula:
         m += "Genero: " + str(self.genero)+ "\n"
         print(m)
 
-def testpeli():
-    peli = Pelicula("Avengers","Tonny Stark","2017","Accion")
-    peli.imprimir()
+
+def ingresarruta():
+    tempruta = input("• Ingrese la ruta del Archivo LFP: ")
+    ruta = tempruta
+
+#####################################
+def cargarArchivo():
+    ingresarruta()
+    
+#####################################
