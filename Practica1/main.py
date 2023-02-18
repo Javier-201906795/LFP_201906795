@@ -18,4 +18,14 @@ print(menuprincipal())
 opcion = 0
 while opcion != 5:
     opcion = int(input())
-    
+    if (opcion == 1):
+        print("uno")
+    elif (opcion == 2):
+        print("dos")
+    elif (opcion == 3):
+        print("tres")
+    elif (opcion == 4):
+        print("cuatro")
+
+
+print("Fin")
