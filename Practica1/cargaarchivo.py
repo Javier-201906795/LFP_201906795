@@ -1,5 +1,6 @@
 
-ruta = None
+from mensajes import *
+
 
 class Pelicula:
     def __init__(self, nombre, actores, anio, genero):
@@ -18,10 +19,23 @@ class Pelicula:
 
 def ingresarruta():
     tempruta = input("• Ingrese la ruta del Archivo LFP: ")
-    ruta = tempruta
+    return tempruta
+
+def leerArchivo(rut):
+
+    pass
 
 #####################################
-def cargarArchivo():
-    ingresarruta()
+def cargarArchivo(lista):
+    ruta = ingresarruta()
+    print(ruta)
+    if ruta == None or ruta == "" or ruta == " ":
+        ingresarruta()
+    else:
+        print(ruta)
+        leerArchivo(ruta)
+
+    print(lista)
+    print("---FIN--")
     
 #####################################

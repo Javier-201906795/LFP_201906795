@@ -7,6 +7,9 @@
 from mensajes import *
 from cargaarchivo import *
 
+#Variables Globales
+ListaPeliculas = []
+
 
 #Pantalla Inicial
 # print(pantallapricipal())
@@ -19,11 +22,23 @@ print(menuprincipal())
 #Observar seleccion
 opcion = 0
 while opcion != 5:
-    opcion = int(input())
+    #Lee la opcion elegida
+    entrada = input()
+    #Intenta ver si es una opcion elegible
+    try:
+        opcion = int(entrada)        
+    except:
+        opcion = 0
+        #Menu Principal
+        print(menuprincipal())
+    
+
+
+
     if (opcion == 1):
         print(m1_cargadearchivios())
         #Carga de archivo
-        cargarArchivo()
+        cargarArchivo(ListaPeliculas)
         #test1
         #testpeli()
 
