@@ -5,6 +5,8 @@
 #╚═════════════════╝
 
 from mensajes import *
+from cargaarchivo import *
+
 
 #Pantalla Inicial
 print(pantallapricipal())
@@ -21,6 +23,10 @@ while opcion != 5:
     if (opcion == 1):
         print(m1_cargadearchivios())
         #Carga de archivo
+
+        #test1
+        testpeli()
+        
     elif (opcion == 2):
         print("dos")
     elif (opcion == 3):
