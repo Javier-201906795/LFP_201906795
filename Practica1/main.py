@@ -19,7 +19,8 @@ opcion = 0
 while opcion != 5:
     opcion = int(input())
     if (opcion == 1):
-        print("uno")
+        print(m1_cargadearchivios())
+        #Carga de archivo
     elif (opcion == 2):
         print("dos")
     elif (opcion == 3):
