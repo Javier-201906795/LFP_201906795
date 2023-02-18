@@ -2,6 +2,7 @@
 from mensajes import *
 
 
+
 class Pelicula:
     def __init__(self, nombre, actores, anio, genero):
         self.nombre = nombre
@@ -27,13 +28,15 @@ def leerArchivo(rut):
 
 #####################################
 def cargarArchivo(lista):
-    ruta = ingresarruta()
-    print(ruta)
-    if ruta == None or ruta == "" or ruta == " ":
-        ingresarruta()
-    else:
-        print(ruta)
-        leerArchivo(ruta)
+    ruta = None
+    flagexit = False
+    while flagexit != True :
+        ruta = ingresarruta()
+        if ruta == None or ruta == "" or ruta == " ":
+            flagexit = False
+        else:
+            flagexit = True
+
 
     print(lista)
     print("---FIN--")
