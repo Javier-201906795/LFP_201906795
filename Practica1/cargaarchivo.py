@@ -36,6 +36,8 @@ def cargarArchivo(lista):
             flagexit = False
         else:
             flagexit = True
+            #Validar si es archivo LFP
+            
 
 
     print(lista)
