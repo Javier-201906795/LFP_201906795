@@ -12,26 +12,44 @@ from validadores import *
 ListaPeliculas = []
 
 
+
+################################################################
+
+
 #Pantalla Inicial
 # print(pantallapricipal())
 # input()
 
+################################################################
+
 #Menu Principal
 print(menuprincipal())
 
+################################################################
 
 #Observar seleccion
 opcion = 0
 while opcion != 5:
     #Lee la opcion elegida
     entrada = input()
-    #Intenta ver si es una opcion elegible
-    try:
-        opcion = int(entrada)        
-    except:
+    #Valida si es una opcion
+    if validarint(entrada) == False:
         opcion = 0
-        #Menu Principal
         print(menuprincipal())
+    else:
+        #guarda la opcion
+        opcion = int(entrada)
+        #Evaluar si es una opcion valida
+        
+
+    
+    # #Intenta ver si es una opcion elegible
+    # try:
+    #     opcion = int(entrada)        
+    # except:
+    #     opcion = 0
+    #     #Menu Principal
+    #     print(menuprincipal())
     
 
 
