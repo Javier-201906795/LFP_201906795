@@ -1,0 +1,23 @@
+digraph { 
+    rankdir = UD 
+    node[shape=record, fontname="Arial Black", fontsize=12] 
+    Tarea3[shape="hexagon", color=orange, style=filled, label="Tarea 3"]
+
+    C1[shape="box", color=green,  label="  Lenguaje formales y  \n de programacion"]
+
+    C2[shape="record", color=blue,  label=" Nombre  \n    |...    Javier Ricardo Yllescas Barrios"]
+
+    C3[shape="doublecircle", color=yellow, style=filled,  label="Seccion B-"]
+
+    C4[shape="doubleoctagon", color=gray, style=filled,  label="Carne: \n 201906795"]
+    
+    C5[shape="rectangle", color=red, style=filled,  label="Correo: \n 29930478701@ingenieria.usac.edu"]
+
+
+    Tarea3 -> C1
+    Tarea3 -> C2
+    C1 -> C3
+    C2 -> C4
+    C4 -> C5
+    
+} 
