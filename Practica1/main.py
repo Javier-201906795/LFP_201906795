@@ -6,6 +6,7 @@
 
 from mensajes import *
 from cargaarchivo import *
+from validadores import *
 
 #Variables Globales
 ListaPeliculas = []
