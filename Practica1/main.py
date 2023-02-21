@@ -32,15 +32,26 @@ opcion = 0
 while opcion != 5:
     #Lee la opcion elegida
     entrada = input()
+
     #Valida si es una opcion
-    if validarint(entrada) == False:
+
+
+    if validadoropciones(entrada) == False:
         opcion = 0
         print(menuprincipal())
     else:
         #guarda la opcion
         opcion = int(entrada)
-        #Evaluar si es una opcion valida
-        
+
+
+    # if validarint(entrada) == False:
+    #     opcion = 0
+    #     print(menuprincipal())
+    # else:
+    #     #guarda la opcion
+    #     opcion = int(entrada)
+    #     #Evaluar si es una opcion valida
+
 
     
     # #Intenta ver si es una opcion elegible

@@ -22,4 +22,7 @@ def validadoropciones(valor):
     else:
         numero = int(valor)
         #Evaluar si es una opcion valida
-        # if (numero >0)
+        if (numero >0 and numero <6):
+            return True
+        else:
+            return False
