@@ -30,38 +30,18 @@ print(menuprincipal())
 #Observar seleccion
 opcion = 0
 while opcion != 5:
+    
+
     #Lee la opcion elegida
     entrada = input()
 
     #Valida si es una opcion
-
-
     if validadoropciones(entrada) == False:
         opcion = 0
         print(menuprincipal())
     else:
         #guarda la opcion
         opcion = int(entrada)
-
-
-    # if validarint(entrada) == False:
-    #     opcion = 0
-    #     print(menuprincipal())
-    # else:
-    #     #guarda la opcion
-    #     opcion = int(entrada)
-    #     #Evaluar si es una opcion valida
-
-
-    
-    # #Intenta ver si es una opcion elegible
-    # try:
-    #     opcion = int(entrada)        
-    # except:
-    #     opcion = 0
-    #     #Menu Principal
-    #     print(menuprincipal())
-    
 
 
 
@@ -78,6 +58,8 @@ while opcion != 5:
         print("tres")
     elif (opcion == 4):
         print("cuatro")
+
+    
 
 
 print("Fin")
