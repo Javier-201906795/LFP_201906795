@@ -52,9 +52,10 @@ def leerarchivolfp(rut):
 #####################################
 def listaPelis(listatxt):
     listPeli = []
+
     for i in listatxt:
         i = i.split(';')
-        print(i)
+
         cont = 1
         temp_nombre = None
         temp_actores = None
@@ -64,41 +65,37 @@ def listaPelis(listatxt):
             if cont == 1:
                 temp_nombre = j
             elif cont == 2:
-                temp_actores = j
+                listaactores = j.split(',')
+                temp_actores = listaactores
             elif cont == 3:
                 temp_anio = j
             elif cont == 4:
                 temp_genero = j
             cont += 1
-        print("------")
-        print(temp_nombre)
-        print(temp_actores)
-        print(temp_anio)
-        print(temp_genero)
-        print("------")
-    # pelicula = Pelicula(temp_nombre,temp_actores,temp_anio,temp_genero)
-    # listPeli.append(pelicula)
-    # return listPeli
+        
+        pelicula = Pelicula(temp_nombre,temp_actores,temp_anio,temp_genero)
+        listPeli.append(pelicula)
+    return listPeli
 #####################################
 
 #####################################
-def cargarArchivo(lista):
+def cargarArchivo():
 
     # ruta = ingresarruta()
     # ruta = validararchivolfp(ruta)
 
     ruta = "entrada.lfp"
+
     listatexto = leerarchivolfp(ruta)
     listaPeliculas = listaPelis(listatexto)
-    # print(listaPeliculas)
-    # print("---")
-    # print(listaPeliculas[0])
+
+    listaPeliculas[0].imprimir()
+    print(listaPeliculas[0].actores)
     
 
             
 
 
-    print(lista)
     print("---FIN--")
     
 #####################################

@@ -31,7 +31,6 @@ print(menuprincipal())
 opcion = 0
 while opcion != 5:
     
-
     #Lee la opcion elegida
     entrada = input()
 
@@ -48,7 +47,7 @@ while opcion != 5:
     if (opcion == 1):
         print(m1_cargadearchivios())
         #Carga de archivo
-        cargarArchivo(ListaPeliculas)
+        cargarArchivo()
         #test1
         #testpeli()
 
