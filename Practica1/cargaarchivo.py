@@ -30,7 +30,8 @@ def leerArchivo(rut):
 def cargarArchivo(lista):
     ruta = None
     flagexit = False
-    
+
+    #Validador de ruta
     while flagexit != True :
         ruta = ingresarruta()
         #Valida si esta vacio
