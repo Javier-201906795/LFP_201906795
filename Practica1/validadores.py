@@ -29,5 +29,11 @@ def validadoropciones(valor):
             return False
         
 
-def validaopciones2(valor,opciones):
-    pass
+def validaopciones2():
+    opciongestion = None
+    while True:
+        opciongetion = input("Ingrese una Opcion: ")
+        if opciongetion == "A" or opciongetion == "a" or opciongetion == "B" or opciongetion == "b":
+            print("Opciones Validas")
+            break
+    return opciongetion
