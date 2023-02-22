@@ -26,3 +26,7 @@ def validadoropciones(valor):
             return True
         else:
             return False
+        
+
+def validaopciones2(valor,opciones):
+    pass

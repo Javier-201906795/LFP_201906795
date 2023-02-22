@@ -53,6 +53,22 @@ def menu2():
     
     return m
 
+def menu3():
+    m = "\n"
+    m += """█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n"""
+    m += """█      GESTIONAR PELICULAS      █\n"""
+    m += """█▀▀▀▀▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n"""
+    m += """█Opcion█    Descripcion         █\n"""
+    m += """█▀▀▀▀▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n"""
+    m += """█  A   █ Mostrar Peliculas      █\n"""
+    m += """█▀▀▀▀▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n"""
+    m += """█  B   █ Mostrar Actores        █\n"""
+    m += """█▄▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n"""
+    m += """\n Seleccione una opcion y luego presione ENTER...\n"""
+    
+    return m
+
+
 def m1_cargadearchivios():
     m =  """╔═══════════════════════════════╗\n"""
     m += """║     [ CARGA DE ARCHIVOS ]     ║\n"""

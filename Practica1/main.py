@@ -23,7 +23,7 @@ ListaPeliculas = None
 ################################################################
 
 #Menu Principal
-#print(menuprincipal())
+print(menuprincipal())
 
 ################################################################
 
@@ -31,12 +31,6 @@ ListaPeliculas = None
 opcion = 0
 cargaexitosaarchivo = False
 while opcion != 5:
-
-    if cargaexitosaarchivo == False:
-        #Menu Principal
-        print(menuprincipal())
-    else:
-        print(menu2())
     
     #Lee la opcion elegida
     entrada = input()
@@ -58,21 +52,23 @@ while opcion != 5:
         if (ListaPeliculas != None) :
             print(m2_cargaexitosa())
             cargaexitosaarchivo = True
-
-        # for i in ListaPeliculas:
-        #     print(i.imprimir())
-        #     print("----")
-        input()
+            print(menu2())
 
 
+    #Gestionar Peliculas
     elif (opcion == 2):
-        print("dos")
+        print(menu3())
+        
     elif (opcion == 3):
         print("tres")
     elif (opcion == 4):
         print("cuatro")
 
-    
+    # if cargaexitosaarchivo == False:
+    #     #Menu Principal
+    #     print(menuprincipal())
+    # else:
+    #     print(menu2())
 
 
 print("Fin")
