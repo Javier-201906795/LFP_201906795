@@ -37,16 +37,30 @@ def validararchivolfp(rut):
             if (extencion == ".lfp" or extencion == ".LFP" or extencion == ".Lfp"):
                 break
             else:
-                print("•• Ingrese un archivo con extension .lfp ••")
+                print("■ ■ Ingrese un archivo con extension .lfp ■ ■")
                 rut = input("• Ingrese la ruta del Archivo LFP: ")
     return rut
 
+#####################################
+def leerarchivolfp(rut):
+    try:
+        archivo = open(rut, 'r')
+        listatexto = archivo.readlines()
+        return listatexto
+    except:
+        print("■ ■ No se pudo leer el archivo LFP | [leerarchivolfp] ■ ■")
+#####################################
 
 #####################################
 def cargarArchivo(lista):
 
-    ruta = ingresarruta()
-    ruta = validararchivolfp(ruta)
+    # ruta = ingresarruta()
+    # ruta = validararchivolfp(ruta)
+
+    ruta = "entrada.lfp"
+    listatexto = leerarchivolfp(ruta)
+    print(listatexto)
+    print(listatexto[1])
     
 
             
