@@ -50,6 +50,36 @@ def leerarchivolfp(rut):
     except:
         print("■ ■ No se pudo leer el archivo LFP | [leerarchivolfp] ■ ■")
 #####################################
+def listaPelis(listatxt):
+    listPeli = []
+    for i in listatxt:
+        i = i.split(';')
+        print(i)
+        cont = 1
+        temp_nombre = None
+        temp_actores = None
+        temp_anio = None
+        temp_genero = None
+        for j in i:
+            if cont == 1:
+                temp_nombre = j
+            elif cont == 2:
+                temp_actores = j
+            elif cont == 3:
+                temp_anio = j
+            elif cont == 4:
+                temp_genero = j
+            cont += 1
+        print("------")
+        print(temp_nombre)
+        print(temp_actores)
+        print(temp_anio)
+        print(temp_genero)
+        print("------")
+    # pelicula = Pelicula(temp_nombre,temp_actores,temp_anio,temp_genero)
+    # listPeli.append(pelicula)
+    # return listPeli
+#####################################
 
 #####################################
 def cargarArchivo(lista):
@@ -59,8 +89,10 @@ def cargarArchivo(lista):
 
     ruta = "entrada.lfp"
     listatexto = leerarchivolfp(ruta)
-    print(listatexto)
-    print(listatexto[1])
+    listaPeliculas = listaPelis(listatexto)
+    # print(listaPeliculas)
+    # print("---")
+    # print(listaPeliculas[0])
     
 
             
