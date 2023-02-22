@@ -64,12 +64,13 @@ while opcion != 5:
         #Valida si hay listado
         if cargaexitosaarchivo == True:
             if opciongestiones == "a" or opciongestiones == "A":
-                mostrarpeliculas()
+                mostrarpeliculas(ListaPeliculas)
             else:
-                mostraractores()
+                mostraractores(ListaPeliculas)
         else:
             mensajeError("No hay peliculas cargadas.")
-        
+        print(menu2())
+
     elif (opcion == 3):
         print("tres")
     elif (opcion == 4):

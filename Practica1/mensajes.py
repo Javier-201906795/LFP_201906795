@@ -49,7 +49,6 @@ def menu2():
     m += """█▀▀▀▀▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n"""
     m += """█  5   █ Salir                  █\n"""
     m += """█▄▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n"""
-    m += """\n Seleccione una opcion y luego presione ENTER...\n"""
     
     return m
 
@@ -64,7 +63,6 @@ def menu3():
     m += """█▀▀▀▀▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n"""
     m += """█  B   █ Mostrar Actores        █\n"""
     m += """█▄▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n"""
-    m += """\n Seleccione una opcion y luego presione ENTER...\n"""
     
     return m
 
