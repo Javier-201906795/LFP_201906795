@@ -58,6 +58,14 @@ while opcion != 5:
     #Gestionar Peliculas
     elif (opcion == 2):
         print(menu3())
+        #Ingresa una opcion
+        opciongestion = None
+        while True:
+            opciongetion = input("Ingrese una Opcion: ")
+            if opciongetion == "A" or opciongetion == "a" or opciongetion == "B" or opciongetion == "b":
+                print("Opciones Validas")
+                break
+
         
     elif (opcion == 3):
         print("tres")

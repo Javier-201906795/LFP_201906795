@@ -17,6 +17,7 @@ def validadoropciones(valor):
 
     #Valida si es un numero
     if validarint(valor) == False:
+        #No es un numero 
         opcion = 0
         return False
     else:
