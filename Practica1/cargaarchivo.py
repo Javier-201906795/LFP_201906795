@@ -17,35 +17,38 @@ class Pelicula:
         m += "Genero: " + str(self.genero)+ "\n"
         print(m)
 
-
+#####################################
 def ingresarruta():
     tempruta = input("• Ingrese la ruta del Archivo LFP: ")
+    #Verifica si esta vacio
+    while True:
+        if tempruta == None or tempruta == "" or tempruta == " ":
+            tempruta = input("• Ingrese la ruta del Archivo LFP: ")
+        else:
+            break
+
     return tempruta
 
-def leerArchivo(rut):
+#####################################
+def validararchivolfp(rut):
+    while True:
+            #Validar si es archivo LFP
+            extencion = rut[-4:]
+            if (extencion == ".lfp" or extencion == ".LFP" or extencion == ".Lfp"):
+                break
+            else:
+                print("•• Ingrese un archivo con extension .lfp ••")
+                rut = input("• Ingrese la ruta del Archivo LFP: ")
+    return rut
 
-    pass
 
 #####################################
 def cargarArchivo(lista):
-    ruta = None
-    flagexit = False
 
-    #Validador de ruta
-    while flagexit != True :
-        ruta = ingresarruta()
-        #Valida si esta vacio
-        if ruta == None or ruta == "" or ruta == " ":
-            flagexit = False
-        else:
-            flagexit = True
-            #Validar si es archivo LFP
-            extencion = ruta[-4:]
-            if (extencion == ".lfp" or extencion == ".LFP" or extencion == ".Lfp"):
-                flagexit = True
-            else:
-                flagexit = False
-            
+    ruta = ingresarruta()
+    ruta = validararchivolfp(ruta)
+    
+
             
 
 
