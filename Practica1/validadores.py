@@ -36,3 +36,17 @@ def validaopciones2():
         if opciongetion == "A" or opciongetion == "a" or opciongetion == "B" or opciongetion == "b":
             break
     return opciongetion
+
+def validadoropcionespelicuals(valor,max):
+
+    #Valida si es un numero
+    if validarint(valor) == False:
+        #No es un numero 
+        return False
+    else:
+        numero = int(valor)
+        #Evaluar si es una opcion valida
+        if (numero >0 and numero <= max):
+            return True
+        else:
+            return False
