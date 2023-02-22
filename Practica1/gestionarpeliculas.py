@@ -1,6 +1,9 @@
 def mostrarpeliculas(ListaPeliculas):
-    print("Mostrar peliculas")
-    print(ListaPeliculas[0].imprimir())
+    print("\n \n")
+    for i in ListaPeliculas:
+        i.imprimir()
+        print("--------------------")
+    print("\n \n")
     return None
 
 def mostraractores(ListaPeliculas):

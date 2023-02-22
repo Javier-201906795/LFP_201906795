@@ -34,6 +34,5 @@ def validaopciones2():
     while True:
         opciongetion = input("Ingrese una Opcion: ")
         if opciongetion == "A" or opciongetion == "a" or opciongetion == "B" or opciongetion == "b":
-            print("Opciones Validas")
             break
     return opciongetion
