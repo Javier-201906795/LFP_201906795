@@ -87,15 +87,10 @@ def cargarArchivo():
     ruta = "entrada.lfp"
 
     listatexto = leerarchivolfp(ruta)
+    listaPeliculas = None
     listaPeliculas = listaPelis(listatexto)
 
-    listaPeliculas[0].imprimir()
-    print(listaPeliculas[0].actores)
     
-
-            
-
-
-    print("---FIN--")
+    return listaPeliculas
     
 #####################################

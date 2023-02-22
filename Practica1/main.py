@@ -9,7 +9,7 @@ from cargaarchivo import *
 from validadores import *
 
 #Variables Globales
-ListaPeliculas = []
+ListaPeliculas = None
 
 
 
@@ -23,13 +23,20 @@ ListaPeliculas = []
 ################################################################
 
 #Menu Principal
-print(menuprincipal())
+#print(menuprincipal())
 
 ################################################################
 
 #Observar seleccion
 opcion = 0
+cargaexitosaarchivo = False
 while opcion != 5:
+
+    if cargaexitosaarchivo == False:
+        #Menu Principal
+        print(menuprincipal())
+    else:
+        print(menu2())
     
     #Lee la opcion elegida
     entrada = input()
@@ -37,19 +44,24 @@ while opcion != 5:
     #Valida si es una opcion
     if validadoropciones(entrada) == False:
         opcion = 0
-        print(menuprincipal())
     else:
         #guarda la opcion
         opcion = int(entrada)
 
 
-
+    #Carga de archivo
     if (opcion == 1):
         print(m1_cargadearchivios())
-        #Carga de archivo
-        cargarArchivo()
-        #test1
-        #testpeli()
+        
+        ListaPeliculas = cargarArchivo()
+
+        if (ListaPeliculas != None) :
+            print(m2_cargaexitosa())
+            cargaexitosaarchivo = True
+            
+
+        input()
+
 
     elif (opcion == 2):
         print("dos")
