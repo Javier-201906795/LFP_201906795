@@ -74,6 +74,15 @@ def listaPelis(listatxt):
             cont += 1
         
         pelicula = Pelicula(temp_nombre,temp_actores,temp_anio,temp_genero)
+        #Validar si existe la pelicula
+        cont2 = 0
+        for h in listPeli:
+            if (h.nombre == pelicula.nombre) :
+                #Elimina si hay una pelicula igual
+                listPeli.pop(cont2)
+            cont2 += 1
+
+        #Agrega la Pelicual al listado
         listPeli.append(pelicula)
     return listPeli
 #####################################

@@ -52,14 +52,16 @@ while opcion != 5:
     #Carga de archivo
     if (opcion == 1):
         print(m1_cargadearchivios())
-        
+        #Carga las peliculas a una lista
         ListaPeliculas = cargarArchivo()
-
+        #Valida si no esta vacio
         if (ListaPeliculas != None) :
             print(m2_cargaexitosa())
             cargaexitosaarchivo = True
-            
 
+        # for i in ListaPeliculas:
+        #     print(i.imprimir())
+        #     print("----")
         input()
 
 
