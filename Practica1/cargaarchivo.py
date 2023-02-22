@@ -30,13 +30,21 @@ def leerArchivo(rut):
 def cargarArchivo(lista):
     ruta = None
     flagexit = False
+    
     while flagexit != True :
         ruta = ingresarruta()
+        #Valida si esta vacio
         if ruta == None or ruta == "" or ruta == " ":
             flagexit = False
         else:
             flagexit = True
             #Validar si es archivo LFP
+            extencion = ruta[-4:]
+            if (extencion == ".lfp" or extencion == ".LFP" or extencion == ".Lfp"):
+                flagexit = True
+            else:
+                flagexit = False
+            
             
 
 
