@@ -87,6 +87,6 @@ def mensajeError(e):
     m =  """╔═══════════════════╗\n"""
     m += """║     [ ERROR ]     ║\n"""
     m += """╚═══════════════════╝\n"""
-    m += str(e)+"\n"
-
-    return m
+    m += "█ █ █ "+str(e)+ " █ █ █\n"
+    print(m)
+    # return m
