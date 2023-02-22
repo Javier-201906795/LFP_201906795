@@ -7,6 +7,7 @@
 from mensajes import *
 from cargaarchivo import *
 from validadores import *
+from gestionarpeliculas import *
 
 #Variables Globales
 ListaPeliculas = None
@@ -63,9 +64,9 @@ while opcion != 5:
         #Valida si hay listado
         if cargaexitosaarchivo == True:
             if opciongestiones == "a" or opciongestiones == "A":
-                print("Mostrar peliculas")
+                mostrarpeliculas()
             else:
-                print("Mostrar actores")
+                mostraractores()
         else:
             mensajeError("No hay peliculas cargadas.")
         
