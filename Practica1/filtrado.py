@@ -5,22 +5,24 @@ def filtraadoporactor(ListaPeliculas):
     print(Titulo_filtroActor())
     #Nueva Lista
     listaActores = []
-    temp_listaActores = []
+    listaActores1 = []
+    
     
     #Recorre las peliculas
+    cont = 0
     for i in ListaPeliculas:
         temp_lista_actores = i.actores
         #obtener actores
         for actor in temp_lista_actores:
-            validador = validadorrepetido(actor,temp_listaActores)
+            validador = validadorrepetido(actor,listaActores)
             print(actor, " | ", validador)
             if validador == False:
                 #guardar
-                temp_listaActores.append(actor)
-
+                listaActores.append(actor)
+        
         print("----")
         cont = 0
-        for j in temp_listaActores:
+        for j in listaActores:
             cont += 1
             print(cont," | ", j)
         print("----")
@@ -32,7 +34,7 @@ def filtraadoporactor(ListaPeliculas):
     #     cont += 1
     #     print(cont," | ", j)
     # print("----")
-    input()
+
 
 def filtradoporanio(ListaPeliculas):
     print("Filtrado por año")

@@ -66,6 +66,6 @@ def validadorrepetido(dato,lista):
     for elemento in lista:
         if elemento == dato:
             contador += 1
-            if contador > 1:
+            if contador >= 1:
                 return True
     return False
