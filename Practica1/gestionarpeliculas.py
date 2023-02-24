@@ -7,6 +7,7 @@ def mostrarpeliculas(ListaPeliculas):
         i.imprimir()
         print("--------------------")
     print("\n \n")
+    input()
     return None
 
 def mostraractores(ListaPeliculas):
@@ -34,5 +35,5 @@ def mostraractores(ListaPeliculas):
         print(i)
     # print(ListaPeliculas[int(opcion)].actores)
     print("--------------------------------")
-
+    input()
     return None
