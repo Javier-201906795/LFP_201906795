@@ -82,6 +82,12 @@ def menu4():
     
     return m
 
+def Titulo_filtroActor():
+    m =  """╔═══════════════════════════════╗\n"""
+    m += """║     [ FILTRO POR ACTOR ]      ║\n"""
+    m += """╚═══════════════════════════════╝"""
+
+    return m
 
 
 def m1_cargadearchivios():

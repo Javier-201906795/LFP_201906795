@@ -59,3 +59,11 @@ def validadoropcionespelicuals(valor,max):
             return True
         else:
             return False
+
+
+def validadorrepetido(dato,lista):
+    for j in lista:
+        if dato == j:
+            return True
+        else:
+            return False
