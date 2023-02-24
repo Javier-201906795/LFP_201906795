@@ -5,6 +5,7 @@ def filtraadoporactor(ListaPeliculas):
     print(Titulo_filtroActor())
     #Nueva Lista
     listaActores = []
+    lista_Peliculas_Orden1 = []
     listaPeliculasActor = []
     
     temp_listaActores = []
@@ -19,6 +20,14 @@ def filtraadoporactor(ListaPeliculas):
             if validador == False:
                 #guardar
                 listaActores.append(actor)
+                lista_Peliculas_Orden1.append(i.nombre)
+            else:
+                #Buscar
+                posicion = listaActores.index(actor)
+                #obtiene la variable
+                variable = lista_Peliculas_Orden1[posicion] 
+                variable += ", " + i.nombre
+                lista_Peliculas_Orden1[posicion] = variable
         
         print("----")
         cont = 0
@@ -27,6 +36,13 @@ def filtraadoporactor(ListaPeliculas):
             print(cont," | ", j)
         print("----")
     
+        print("----")
+        cont = 0
+        for j in lista_Peliculas_Orden1:
+            cont += 1
+            print(cont," | ", j)
+        print("----")
+
     #Imprimir
     # print("----")
     # cont = 0
