@@ -70,6 +70,7 @@ while opcion != 5:
                 print(menu2())
         else:
             mensajeError("No hay peliculas cargadas.")
+            print(menuprincipal())
         
 
     elif (opcion == 3):

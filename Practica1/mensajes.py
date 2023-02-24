@@ -104,4 +104,5 @@ def mensajeError(e):
     m += """╚═══════════════════╝\n"""
     m += "█ █ █ "+str(e)+ " █ █ █\n"
     print(m)
+    input()
     # return m
