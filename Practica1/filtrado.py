@@ -4,7 +4,7 @@ from mensajes import *
 def filtraadoporactor(ListaPeliculas):
     print(Titulo_filtroActor())
     #Nueva Lista
-    listaActores = ["test1","tes2"]
+    listaActores = []
     
     #Recorre las peliculas
     for i in ListaPeliculas:
