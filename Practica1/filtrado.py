@@ -20,14 +20,13 @@ def filtraadoporactor(ListaPeliculas):
             if validador == False:
                 #guardar
                 listaActores.append(actor)
-                lista_Peliculas_Orden1.append(i.nombre)
+                lista_Peliculas_Orden1.append([i.nombre])
             else:
                 #Buscar
                 posicion = listaActores.index(actor)
                 #obtiene la variable
                 variable = lista_Peliculas_Orden1[posicion] 
-                variable += ", " + i.nombre
-                lista_Peliculas_Orden1[posicion] = variable
+                variable.append(i.nombre)
         
         print("----")
         cont = 0
