@@ -8,6 +8,7 @@ from mensajes import *
 from cargaarchivo import *
 from validadores import *
 from gestionarpeliculas import *
+from filtrado import *
 
 #Variables Globales
 ListaPeliculas = None
@@ -67,15 +68,30 @@ while opcion != 5:
                 mostrarpeliculas(ListaPeliculas)
             else:
                 mostraractores(ListaPeliculas)
-                print(menu2())
+            print(menu2())
         else:
             mensajeError("No hay peliculas cargadas.")
             print(menuprincipal())
         
 
+    #Filtrado Peliculas
     elif (opcion == 3):
-        print("tres")
         print(menu4())
+        opciongestiones = validaopciones3()
+        print(opciongestiones)
+        #Valida si hay listado
+        if cargaexitosaarchivo == True:
+            if opciongestiones == "a" or opciongestiones == "A":
+                filtraadoporactor()
+            elif opciongestiones == "b" or opciongestiones == "B":
+                filtradoporanio()
+            elif opciongestiones == "c" or opciongestiones == "C":
+                filtradoporgenero()
+            
+            print(menu2())
+        else:
+            mensajeError("No hay peliculas cargadas.")
+            print(menuprincipal())
     elif (opcion == 4):
         print("cuatro")
 

@@ -37,6 +37,15 @@ def validaopciones2():
             break
     return opciongetion
 
+
+def validaopciones3():
+    opciongestion = None
+    while True:
+        opciongetion = input("Ingrese una Opcion: ")
+        if opciongetion == "A" or opciongetion == "a" or opciongetion == "B" or opciongetion == "b" or opciongetion == "C" or opciongetion == "c":
+            break
+    return opciongetion
+
 def validadoropcionespelicuals(valor,max):
 
     #Valida si es un numero

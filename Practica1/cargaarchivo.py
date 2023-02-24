@@ -93,7 +93,7 @@ def cargarArchivo():
     # ruta = ingresarruta()
     # ruta = validararchivolfp(ruta)
 
-    ruta = "entrada.lfp"
+    ruta = "entrada2.lfp"
 
     listatexto = leerarchivolfp(ruta)
     listaPeliculas = None
