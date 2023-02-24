@@ -5,7 +5,7 @@ def filtraadoporactor(ListaPeliculas):
     print(Titulo_filtroActor())
     #Nueva Lista
     listaActores = []
-    listaActores1 = []
+    listaPeliculasActor = []
     
     
     #Recorre las peliculas
@@ -18,7 +18,7 @@ def filtraadoporactor(ListaPeliculas):
             print(actor, " | ", validador)
             if validador == False:
                 #guardar
-                listaActores.append(actor)
+                listaActores.append([actor,i.nombre])
         
         print("----")
         cont = 0
