@@ -67,12 +67,14 @@ while opcion != 5:
                 mostrarpeliculas(ListaPeliculas)
             else:
                 mostraractores(ListaPeliculas)
+                print(menu2())
         else:
             mensajeError("No hay peliculas cargadas.")
-        print(menu2())
+        
 
     elif (opcion == 3):
         print("tres")
+        print(menu4())
     elif (opcion == 4):
         print("cuatro")
 
