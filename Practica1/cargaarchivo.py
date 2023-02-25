@@ -1,5 +1,6 @@
 
 from mensajes import *
+from validadores import *
 
 
 
@@ -63,13 +64,17 @@ def listaPelis(listatxt):
         temp_genero = None
         for j in i:
             if cont == 1:
+                j = quitarespacioalprincipio(j)
                 temp_nombre = j
             elif cont == 2:
+                j = quitarespacioalprincipio(j)
                 listaactores = j.split(',')
                 temp_actores = listaactores
             elif cont == 3:
+                j = quitarespacioalprincipio(j)
                 temp_anio = j
             elif cont == 4:
+                j = quitarespacioalprincipio(j)
                 temp_genero = j
             cont += 1
         

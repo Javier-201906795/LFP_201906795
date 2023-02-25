@@ -59,16 +59,15 @@ def filtradoporanio(ListaPeliculas):
     for i in range(len(ListaPeliculas)):
         for j in range(i+1, len(ListaPeliculas)):
             # Si el elemento en la posición j es mayor que el elemento en la posición i
-            print(ListaPeliculas[i].anio)
-            print(ListaPeliculas[j].anio)
+            print(ListaPeliculas[i].anio, " |  ", ListaPeliculas[j].anio)
             if ListaPeliculas[j].anio > ListaPeliculas[i].anio:
                 # Intercambiamos los valores de posición
                 temp = ListaPeliculas[j].nombre
                 ListaPeliculas[j].nombre = ListaPeliculas[i].nombre
                 ListaPeliculas[i].nombre = temp
 
-    # for i in ListaPeliculas:
-    #     i.imprimir()
+    for i in ListaPeliculas:
+        i.imprimir()
 
 def filtradoporgenero(ListaPeliculas):
     print("Filtrado por Genero")

@@ -103,3 +103,10 @@ def quitarespacioalprincipio(texto):
             newtext += i
         cont += 1
     return newtext
+
+def convertiranumero(texto):
+    try:
+        nuevonumero = int(texto)
+        return True
+    except:
+        return False
