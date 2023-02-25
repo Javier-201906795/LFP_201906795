@@ -74,6 +74,66 @@ def filtradoporanio(ListaPeliculas):
 def filtradoporgenero(ListaPeliculas):
     print("Filtrado por Genero")
 
+    nuevalista = []
+    lista2 = []
 
-    
-    
+    for i in ListaPeliculas:
+        nuevalista.append([" "," "])
+
+
+    for i in range(0,len(ListaPeliculas)):
+        genero = ListaPeliculas[i].genero
+        genero1 = nuevalista[i][0]
+        # print(genero, genero1)
+        # print(i,"------")
+        if genero == genero1:
+            # print("igual")
+            nuevalista[i][1] += ", "+ ListaPeliculas[i].nombre
+        else:
+            #Agregar
+            nuevalista[i][0] = ListaPeliculas[i].genero
+            nuevalista[i][1] = ListaPeliculas[i].nombre
+
+    for i in range(1,len(nuevalista)):
+        genero = nuevalista[i - 1][0]
+        genero1 = nuevalista[i][0]
+        if genero == genero1:
+            #combinar
+            peliculas = nuevalista[i-1][1] + ", "+nuevalista[i][1]
+            lista2.append([genero,peliculas])
+        
+
+    #imprimir
+    print("------")
+    for i in nuevalista:
+        print(i)
+
+
+    print("*****")
+    for i in lista2:
+        print(i)
+
+
+
+
+
+
+    # cont = 0 
+
+
+    # for i in ListaPeliculas:
+    #     if cont == 0:
+    #         print(i.genero)
+    #         nuevalista.append([i.genero,i.nombre])
+    #     elif cont < len(ListaPeliculas):
+    #         generolista = ListaPeliculas[cont].genero
+    #         newcont = cont - 1
+    #         generonuevalista = nuevalista[newcont][0]
+    #         print(cont - 1)
+    #         print(generonuevalista)
+    #         if generolista == nuevalista[cont - 1][0]:
+    #             print("igual")
+    #         else:
+    #             print(generolista)
+
+    #     cont += 1

@@ -83,7 +83,7 @@ while opcion != 5:
         print(menu4())
         #[F] Ingresa una opcion
         #opciongestiones = validaopciones3()
-        opciongestiones = "b"
+        opciongestiones = "C"
         
         #Valida si hay listado
         if cargaexitosaarchivo == True:
@@ -92,10 +92,10 @@ while opcion != 5:
                 input()
             elif opciongestiones == "b" or opciongestiones == "B":
                 filtradoporanio(ListaPeliculas)
-                #input()
+                input()
             elif opciongestiones == "c" or opciongestiones == "C":
                 filtradoporgenero(ListaPeliculas)
-                input()
+                #input()
             
             print(menu2())
         else:
