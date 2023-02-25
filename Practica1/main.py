@@ -9,6 +9,7 @@ from cargaarchivo import *
 from validadores import *
 from gestionarpeliculas import *
 from filtrado import *
+from grafica import *
 
 #Variables Globales
 ListaPeliculas = None
@@ -103,9 +104,7 @@ while opcion != 5:
             print(menuprincipal())
     elif (opcion == 4):
         print("cuatro")
-        men = " el texto"
-        print(men)
-        print(quitarespacioalprincipio(men))
+        grafica()
 
 
 print("Fin")
