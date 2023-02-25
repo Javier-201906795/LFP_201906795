@@ -107,6 +107,6 @@ def quitarespacioalprincipio(texto):
 def convertiranumero(texto):
     try:
         nuevonumero = int(texto)
-        return True
+        return nuevonumero
     except:
-        return False
+        print("Erro al convertir texto a numero")
