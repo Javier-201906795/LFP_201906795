@@ -1,0 +1,10 @@
+digraph {
+    rankdir = LR
+
+    node[shape=circle, fontname="Arial Black", fontsize=16]
+    actor[label="Actor", color=yellow, style=filled]
+    pelicula[shape=record, color = red, label="Titulo | {Año | Genero } "]
+
+    pelicula -> actor
+
+}

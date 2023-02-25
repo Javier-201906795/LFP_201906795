@@ -102,9 +102,16 @@ while opcion != 5:
         else:
             mensajeError("No hay peliculas cargadas.")
             print(menuprincipal())
+
+
     elif (opcion == 4):
         print("cuatro")
-        grafica()
+        if cargaexitosaarchivo == True:
+            grafica(ListaPeliculas)
+            print(menuprincipal())
+        else:
+            mensajeError("No hay peliculas cargadas.")
+            print(menuprincipal())
 
 
 print("Fin")
