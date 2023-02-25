@@ -44,8 +44,13 @@ def filtraadoporactor(ListaPeliculas):
     while True:
         opcion = input("Ingrese una opcion:")
         if validadoropcionesnumericas(opcion,len(lista_Actor_Peliculas)):
-            print("opcion disponible")
             break
+    #Imprime datos del filtrado
+    print("-----------------------")
+    print("\n [ PELICULAS DONDE PARTICIPO ", lista_Actor_Peliculas[int(opcion)-1][0] ,"]\n")
+    for i in lista_Actor_Peliculas[int(opcion)-1][1]:
+        print(i)
+    print("\n-----------------------\n")
         
 
 def filtradoporanio(ListaPeliculas):

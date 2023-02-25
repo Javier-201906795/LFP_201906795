@@ -89,10 +89,13 @@ while opcion != 5:
         if cargaexitosaarchivo == True:
             if opciongestiones == "a" or opciongestiones == "A":
                 filtraadoporactor(ListaPeliculas)
+                input()
             elif opciongestiones == "b" or opciongestiones == "B":
                 filtradoporanio(ListaPeliculas)
+                input()
             elif opciongestiones == "c" or opciongestiones == "C":
                 filtradoporgenero(ListaPeliculas)
+                input()
             
             print(menu2())
         else:
