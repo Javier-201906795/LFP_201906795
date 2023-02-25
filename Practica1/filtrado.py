@@ -16,7 +16,6 @@ def filtraadoporactor(ListaPeliculas):
         #obtener actores
         for actor in temp_lista_actores:
             validador = validadorrepetido(actor,listaActores)
-            print(actor, " | ", validador)
             if validador == False:
                 #guardar
                 listaActores.append(actor)
@@ -27,39 +26,21 @@ def filtraadoporactor(ListaPeliculas):
                 #obtiene la variable
                 variable = lista_Peliculas_Orden1[posicion] 
                 variable.append(i.nombre)
-        
-        
-
-        print("----")
-        cont = 0
-        for j in listaActores:
-            cont += 1
-            print(cont," | ", j)
-        print("----")
-    
-        print("----")
-        cont = 0
-        for j in lista_Peliculas_Orden1:
-            cont += 1
-            print(cont," | ", j)
-        print("----")
 
     #Unir Listas
     cont = 0
     for j in listaActores:
         lista_Actor_Peliculas.append([j,lista_Peliculas_Orden1[cont]])
         cont += 1
-
+    #Imprimir Opciones
+    cont = 1
     for j in lista_Actor_Peliculas:
-        print(j)
-
-    #Imprimir
-    # print("----")
-    # cont = 0
-    # for j in temp_listaActores:
-    #     cont += 1
-    #     print(cont," | ", j)
-    # print("----")
+        print(cont," | ",j[0])
+        cont += 1 
+    print("\n")
+    print("Seleccione una opcion del 1 al ",str(len(lista_Actor_Peliculas)), ":\n")
+    #Valida opcion correcta
+    
 
 def filtradoporanio(ListaPeliculas):
     print("Filtrado por año")
