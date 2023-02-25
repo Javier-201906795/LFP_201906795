@@ -3,24 +3,24 @@ rankdir = LR
 node[shape=circle, fontname="Arial Black", fontsize=16]
 pelicula0[shape=record, color = red, label="The Avengers  | {2012  | Ficcion
  } "]
-pelicula1[shape=record, color = yellow, label="The Avengers3  | {2012  | Ficcion
+pelicula1[shape=record, color = black, label="The Avengers3  | {2012  | Ficcion
  } "]
-pelicula2[shape=record, color = black, label="The Avengers4  | {2012  | Ficcion
+pelicula2[shape=record, color = red, label="The Avengers4  | {2012  | Ficcion
  } "]
-pelicula3[shape=record, color = blue, label="The Avengers5  | {2012  | Ficcion
+pelicula3[shape=record, color = yellow, label="The Avengers5  | {2012  | Ficcion
  } "]
-pelicula4[shape=record, color = black, label="Spiderman | {2002 | Accion
+pelicula4[shape=record, color = yellow, label="Spiderman | {2002 | Accion
  } "]
-pelicula5[shape=record, color = yellow, label="The Amazing Spiderman | {2012 | Accion
+pelicula5[shape=record, color = black, label="The Amazing Spiderman | {2012 | Accion
  } "]
-pelicula6[shape=record, color = black, label="The Amazing Spiderman 2 | {2014 | Accion
+pelicula6[shape=record, color = blue, label="The Amazing Spiderman 2 | {2014 | Accion
  } "]
-pelicula7[shape=record, color = red, label="Spiderman Homecoming | {2017 | Accion
+pelicula7[shape=record, color = black, label="Spiderman Homecoming | {2017 | Accion
  } "]
 pelicula8[shape=record, color = yellow, label="Avengers Infinity War | {2018 | Acion
  } "]
-pelicula9[shape=record, color = black, label="The Avengers2  | {2014  | Accion
+pelicula9[shape=record, color = yellow, label="The Avengers2  | {2014  | Accion
  } "]
-pelicula10[shape=record, color = red, label="Pelicula  | {2014  | Accion
+pelicula10[shape=record, color = blue, label="Pelicula  | {2014  | Accion
  } "]
 } 

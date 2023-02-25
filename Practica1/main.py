@@ -18,13 +18,6 @@ ListaPeliculas = None
 
 ################################################################
 
-
-#Pantalla Inicial
-# print(pantallapricipal())
-# input()
-
-################################################################
-
 #Menu Principal
 print(menuprincipal())
 
@@ -50,9 +43,8 @@ while opcion != 5:
     if (opcion == 1):
         print(m1_cargadearchivios())
         #[F]Obtener ruta
-        # ruta = ingresarruta()
-        # ruta = validararchivolfp(ruta)
-        ruta = "entrada2.lfp"
+        ruta = ingresarruta()
+        ruta = validararchivolfp(ruta)
         #Carga las peliculas a una lista
         ListaPeliculas = cargarArchivo(ruta)
         #Valida si no esta vacio
@@ -83,8 +75,7 @@ while opcion != 5:
     elif (opcion == 3):
         print(menu4())
         #[F] Ingresa una opcion
-        #opciongestiones = validaopciones3()
-        opciongestiones = "C"
+        opciongestiones = validaopciones3()
         
         #Valida si hay listado
         if cargaexitosaarchivo == True:

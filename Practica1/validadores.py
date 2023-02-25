@@ -104,6 +104,8 @@ def quitarespacioalprincipio(texto):
         cont += 1
     return newtext
 
+
+
 def convertiranumero(texto):
     try:
         nuevonumero = int(texto)
