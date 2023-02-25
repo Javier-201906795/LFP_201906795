@@ -103,7 +103,9 @@ while opcion != 5:
             print(menuprincipal())
     elif (opcion == 4):
         print("cuatro")
-
+        men = " el texto"
+        print(men)
+        print(quitarespacioalprincipio(men))
     # if cargaexitosaarchivo == False:
     #     #Menu Principal
     #     print(menuprincipal())

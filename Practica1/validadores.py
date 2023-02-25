@@ -86,3 +86,20 @@ def validadoropcionesnumericas(valor,max):
             return True
         else:
             return False
+        
+def quitarespacioalprincipio(texto):
+    cont = 0
+    newtext = ""
+    for i in texto:
+        #primeros caractes
+        if cont <=1:
+            #validar
+            if i == "" or i == " ":
+                pass
+            else:
+                newtext += i
+        else:
+            #resto de caracteres
+            newtext += i
+        cont += 1
+    return newtext
