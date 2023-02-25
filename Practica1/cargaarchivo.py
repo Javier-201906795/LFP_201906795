@@ -88,12 +88,7 @@ def listaPelis(listatxt):
 #####################################
 
 #####################################
-def cargarArchivo():
-
-    # ruta = ingresarruta()
-    # ruta = validararchivolfp(ruta)
-
-    ruta = "entrada2.lfp"
+def cargarArchivo(ruta):
 
     listatexto = leerarchivolfp(ruta)
     listaPeliculas = None

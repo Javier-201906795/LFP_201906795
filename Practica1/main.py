@@ -48,8 +48,11 @@ while opcion != 5:
     #Carga de archivo
     if (opcion == 1):
         print(m1_cargadearchivios())
+        #Obtener ruta
+        ruta = ingresarruta()
+        ruta = validararchivolfp(ruta)
         #Carga las peliculas a una lista
-        ListaPeliculas = cargarArchivo()
+        ListaPeliculas = cargarArchivo(ruta)
         #Valida si no esta vacio
         if (ListaPeliculas != None) :
             print(m2_cargaexitosa())
