@@ -6,7 +6,7 @@ def filtraadoporactor(ListaPeliculas):
     #Nueva Lista
     listaActores = []
     lista_Peliculas_Orden1 = []
-    listaPeliculasActor = []
+    lista_Actor_Peliculas = []
     
     temp_listaActores = []
     
@@ -28,6 +28,8 @@ def filtraadoporactor(ListaPeliculas):
                 variable = lista_Peliculas_Orden1[posicion] 
                 variable.append(i.nombre)
         
+        
+
         print("----")
         cont = 0
         for j in listaActores:
@@ -41,6 +43,15 @@ def filtraadoporactor(ListaPeliculas):
             cont += 1
             print(cont," | ", j)
         print("----")
+
+    #Unir Listas
+    cont = 0
+    for j in listaActores:
+        lista_Actor_Peliculas.append([j,lista_Peliculas_Orden1[cont]])
+        cont += 1
+
+    for j in lista_Actor_Peliculas:
+        print(j)
 
     #Imprimir
     # print("----")
