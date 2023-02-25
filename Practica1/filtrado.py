@@ -73,4 +73,7 @@ def filtradoporanio(ListaPeliculas):
 
 def filtradoporgenero(ListaPeliculas):
     print("Filtrado por Genero")
-    input()
+
+
+    
+    
