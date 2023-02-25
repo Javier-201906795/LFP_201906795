@@ -106,11 +106,6 @@ while opcion != 5:
         men = " el texto"
         print(men)
         print(quitarespacioalprincipio(men))
-    # if cargaexitosaarchivo == False:
-    #     #Menu Principal
-    #     print(menuprincipal())
-    # else:
-    #     print(menu2())
 
 
 print("Fin")
