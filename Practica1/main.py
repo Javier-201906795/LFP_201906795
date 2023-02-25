@@ -83,7 +83,7 @@ while opcion != 5:
         print(menu4())
         #[F] Ingresa una opcion
         #opciongestiones = validaopciones3()
-        opciongestiones = "a"
+        opciongestiones = "b"
         
         #Valida si hay listado
         if cargaexitosaarchivo == True:
