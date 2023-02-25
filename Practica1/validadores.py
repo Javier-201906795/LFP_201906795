@@ -69,3 +69,20 @@ def validadorrepetido(dato,lista):
             if contador >= 1:
                 return True
     return False
+
+
+def validadoropcionesnumericas(valor,max):
+    #El valor inicial es uno
+
+    #Valida si es un numero
+    if validarint(valor) == False:
+        #No es un numero 
+        opcion = 0
+        return False
+    else:
+        numero = int(valor)
+        #Evaluar si es una opcion valida
+        if (numero >0 and numero <= max):
+            return True
+        else:
+            return False

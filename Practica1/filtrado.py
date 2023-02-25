@@ -40,7 +40,13 @@ def filtraadoporactor(ListaPeliculas):
     print("\n")
     print("Seleccione una opcion del 1 al ",str(len(lista_Actor_Peliculas)), ":\n")
     #Valida opcion correcta
-    
+    opcion = None
+    while True:
+        opcion = input("Ingrese una opcion:")
+        if validadoropcionesnumericas(opcion,len(lista_Actor_Peliculas)):
+            print("opcion disponible")
+            break
+        
 
 def filtradoporanio(ListaPeliculas):
     print("Filtrado por año")
