@@ -48,9 +48,10 @@ while opcion != 5:
     #Carga de archivo
     if (opcion == 1):
         print(m1_cargadearchivios())
-        #Obtener ruta
-        ruta = ingresarruta()
-        ruta = validararchivolfp(ruta)
+        #[F]Obtener ruta
+        # ruta = ingresarruta()
+        # ruta = validararchivolfp(ruta)
+        ruta = "entrada2.lfp"
         #Carga las peliculas a una lista
         ListaPeliculas = cargarArchivo(ruta)
         #Valida si no esta vacio
@@ -80,8 +81,10 @@ while opcion != 5:
     #Filtrado Peliculas
     elif (opcion == 3):
         print(menu4())
-        opciongestiones = validaopciones3()
-        print(opciongestiones)
+        #[F] Ingresa una opcion
+        #opciongestiones = validaopciones3()
+        opciongestiones = "a"
+        
         #Valida si hay listado
         if cargaexitosaarchivo == True:
             if opciongestiones == "a" or opciongestiones == "A":
