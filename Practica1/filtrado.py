@@ -47,7 +47,7 @@ def filtraadoporactor(ListaPeliculas):
             break
     #Imprime datos del filtrado
     print("-----------------------")
-    print("\n [ PELICULAS DONDE PARTICIPO ", lista_Actor_Peliculas[int(opcion)-1][0] ,"]\n")
+    print("\n• PELICULAS DONDE PARTICIPO [", lista_Actor_Peliculas[int(opcion)-1][0] ,"]\n")
     for i in lista_Actor_Peliculas[int(opcion)-1][1]:
         print(i)
     print("\n-----------------------\n")
