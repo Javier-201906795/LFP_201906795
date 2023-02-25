@@ -92,7 +92,7 @@ while opcion != 5:
                 input()
             elif opciongestiones == "b" or opciongestiones == "B":
                 filtradoporanio(ListaPeliculas)
-                input()
+                #input()
             elif opciongestiones == "c" or opciongestiones == "C":
                 filtradoporgenero(ListaPeliculas)
                 input()
